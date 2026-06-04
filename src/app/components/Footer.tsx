@@ -69,14 +69,13 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-secondary flex-shrink-0 mt-1" />
                 <span className="text-white/70">
-                  123, Knowledge Park,<br />
-                  Bangalore - 560001,<br />
-                  Karnataka, India
+                <span className="text-white/70">Flat No. 103, 1st Floor Indradeep, Complex, 117/N/47, AVON Market, Ambedkar Nagar, Navin Nagar, Karadeo Kanpur, Uttar Pradesh, 208005, India</span>
+                  
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={20} className="text-secondary flex-shrink-0" />
-                <span className="text-white/70">+91 98765 43210</span>
+                <span className="text-white/70">+91 9956660896 , +91 9365106332</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={20} className="text-secondary flex-shrink-0" />
@@ -89,7 +88,7 @@ export function Footer() {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/60 text-sm text-center md:text-left">
-              © {currentYear} Vitta Nipun. All rights reserved.
+              © {currentYear} VITTANIPUN EDUTECH & SKILL SOLUTIONS. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-white/60 hover:text-secondary transition-colors">Privacy Policy</a>
