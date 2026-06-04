@@ -45,7 +45,7 @@ export function Footer() {
               <li><a href="#" className="text-white/70 hover:text-secondary transition-colors">All Courses</a></li>
               <li><a href="#" className="text-white/70 hover:text-secondary transition-colors">Placements</a></li>
               <li><a href="#" className="text-white/70 hover:text-secondary transition-colors">Webinars</a></li>
-              <li><a href="#" className="text-white/70 hover:text-secondary transition-colors">Blog</a></li>
+              <li><a href="/blog" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-secondary transition-colors">Blog</a></li>
               <li><a href="#" className="text-white/70 hover:text-secondary transition-colors">Success Stories</a></li>
             </ul>
           </div>
@@ -74,7 +74,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={20} className="text-secondary flex-shrink-0" />
-                <span className="text-white/70">+91 9956660896 ,</br> +91 9365106332</span>
+                <span className="text-white/70">+91 9956660896 , +91 9365106332</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={20} className="text-secondary flex-shrink-0" />

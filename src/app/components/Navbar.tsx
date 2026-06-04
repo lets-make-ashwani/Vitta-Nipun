@@ -34,8 +34,8 @@ export function Navbar() {
             <a href="#home" className="text-white hover:text-secondary transition-colors">Home</a>
             <a href="#courses" className="text-white hover:text-secondary transition-colors">Courses</a>
             {/* <a href="#placements" className="text-white hover:text-secondary transition-colors">Placements</a>
-            <a href="#webinars" className="text-white hover:text-secondary transition-colors">Webinars</a>
-            <a href="#blogs" className="text-white hover:text-secondary transition-colors">Blogs</a> */}
+            <a href="#webinars" className="text-white hover:text-secondary transition-colors">Webinars</a> */}
+            <a href="/blog" target="_blank" rel="noopener noreferrer" className="text-white hover:text-secondary transition-colors">Blogs</a>
             <a href="#contact" className="text-white hover:text-secondary transition-colors">Contact</a>
           </div>
 

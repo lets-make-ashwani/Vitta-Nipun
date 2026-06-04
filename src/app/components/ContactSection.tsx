@@ -43,7 +43,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-white font-semibold mb-1">Visit Us</p>
-                    <p className="text-white/70">123, Knowledge Park, Bangalore - 560001, Karnataka, India</p>
+                    <p className="text-white/70">Flat No. 103, 1st Floor Indradeep, Complex, 117/N/47, AVON Market, Ambedkar Nagar, Navin Nagar, Karadeo Kanpur, Uttar Pradesh, 208005, India</p>
                   </div>
                 </div>
 
@@ -53,8 +53,8 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-white font-semibold mb-1">Call Us</p>
-                    <p className="text-white/70">+91 98765 43210</p>
-                    <p className="text-white/70">+91 98765 43211</p>
+                    <p className="text-white/70">+91 9956660896</p>
+                    <p className="text-white/70">+91 9365106332</p>
                   </div>
                 </div>
 
@@ -64,7 +64,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-white font-semibold mb-1">Email Us</p>
-                    <p className="text-white/70">info@vittanipun.com</p>
+                    <p className="text-white/70">Contact@vittanipun.com</p>
                     <p className="text-white/70">admissions@vittanipun.com</p>
                   </div>
                 </div>

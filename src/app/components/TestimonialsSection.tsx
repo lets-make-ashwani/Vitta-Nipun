@@ -84,10 +84,10 @@ export function TestimonialsSection() {
 
               <p className="text-muted-foreground leading-relaxed mb-4">"{testimonial.review}"</p>
 
-              <button className="flex items-center gap-2 text-primary hover:text-secondary transition-colors group-hover:translate-x-2 duration-300">
+              {/* <button className="flex items-center gap-2 text-primary hover:text-secondary transition-colors group-hover:translate-x-2 duration-300">
                 <Play size={16} className="fill-current" />
                 <span className="text-sm font-semibold">Watch Video</span>
-              </button>
+              </button> */}
             </motion.div>
           ))}
         </div>

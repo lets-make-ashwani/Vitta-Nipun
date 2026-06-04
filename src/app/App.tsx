@@ -3,10 +3,10 @@ import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { CourseCategories } from './components/CourseCategories';
 import { WhyChooseUs } from './components/WhyChooseUs';
-import { FeaturedCourses } from './components/FeaturedCourses';
+// import { FeaturedCourses } from './components/FeaturedCourses';
 import { PlacementSection } from './components/PlacementSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
-import { WebinarSection } from './components/WebinarSection';
+// import { WebinarSection } from './components/WebinarSection';
 import { BlogSection } from './components/BlogSection';
 import { FAQSection } from './components/FAQSection';
 import { ContactSection } from './components/ContactSection';
@@ -27,10 +27,10 @@ export default function App() {
         <HeroSection />
         <CourseCategories />
         <WhyChooseUs />
-        <FeaturedCourses />
+        {/* <FeaturedCourses /> */}
         <PlacementSection />
         <TestimonialsSection />
-        <WebinarSection />
+        {/* <WebinarSection /> */}
         <BlogSection />
         <FAQSection />
         <ContactSection />
