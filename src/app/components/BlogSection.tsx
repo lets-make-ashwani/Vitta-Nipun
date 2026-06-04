@@ -10,6 +10,7 @@ export function BlogSection() {
       date: 'May 20, 2026',
       readTime: '5 min read',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop',
+      href: '/blog/article?id=investment-banking',
     },
     {
       title: 'How AI is Transforming Financial Analysis',
@@ -18,6 +19,7 @@ export function BlogSection() {
       date: 'May 18, 2026',
       readTime: '7 min read',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop',
+      href: '/blog/article?id=ai-finance',
     },
     {
       title: 'Breaking into FinTech: A Complete Guide',
@@ -26,6 +28,7 @@ export function BlogSection() {
       date: 'May 15, 2026',
       readTime: '6 min read',
       image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=500&fit=crop',
+      href: '/blog/article?id=fintech',
     },
   ];
 
@@ -58,7 +61,7 @@ export function BlogSection() {
               transition={{ delay: index * 0.1 }}
               className="bg-white border border-border rounded-2xl overflow-hidden hover:shadow-2xl transition-all group"
             >
-              <div className="relative h-56 overflow-hidden">
+              <a href={blog.href} target="_blank" rel="noopener noreferrer" className="block relative h-56 overflow-hidden">
                 <img
                   src={blog.image}
                   alt={blog.title}
@@ -69,7 +72,7 @@ export function BlogSection() {
                     {blog.category}
                   </span>
                 </div>
-              </div>
+              </a>
 
               <div className="p-6">
                 <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
@@ -83,28 +86,30 @@ export function BlogSection() {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-primary mb-3 line-clamp-2 group-hover:text-secondary transition-colors">
-                  {blog.title}
-                </h3>
+                <a href={blog.href} target="_blank" rel="noopener noreferrer">
+                  <h3 className="text-xl font-bold text-primary mb-3 line-clamp-2 group-hover:text-secondary transition-colors">
+                    {blog.title}
+                  </h3>
+                </a>
 
                 <p className="text-muted-foreground mb-4 line-clamp-3 leading-relaxed">
                   {blog.excerpt}
                 </p>
 
-                <button className="text-primary hover:text-secondary font-semibold flex items-center gap-2 transition-colors group-hover:translate-x-2 duration-300">
+                <a href={blog.href} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary font-semibold flex items-center gap-2 transition-colors group-hover:translate-x-2 duration-300 w-fit">
                   Read More
                   <ArrowRight size={18} />
-                </button>
+                </a>
               </div>
             </motion.article>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 rounded-lg font-semibold transition-colors inline-flex items-center gap-2">
+          <a href="/blog" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 rounded-lg font-semibold transition-colors inline-flex items-center gap-2">
             View All Articles
             <ArrowRight size={20} />
-          </button>
+          </a>
         </div>
       </div>
     </section>

@@ -12,7 +12,8 @@ export function BlogPage() {
       author: "Vitta Nipun Experts",
       date: "Oct 15, 2025",
       image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=800",
-      category: "Investment Banking"
+      category: "Investment Banking",
+      href: "/blog/article?id=investment-banking"
     },
     {
       id: 2,
@@ -21,7 +22,8 @@ export function BlogPage() {
       author: "Tech Team",
       date: "Oct 12, 2025",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-      category: "FinTech"
+      category: "FinTech",
+      href: "/blog/article?id=ai-finance"
     },
     {
       id: 3,
@@ -30,7 +32,8 @@ export function BlogPage() {
       author: "Career Cell",
       date: "Oct 08, 2025",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-      category: "Data Science"
+      category: "Data Science",
+      href: "/blog/article?id=fintech"
     },
     {
       id: 4,
@@ -39,7 +42,8 @@ export function BlogPage() {
       author: "Trading Desk",
       date: "Oct 05, 2025",
       image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800",
-      category: "Stock Market"
+      category: "Stock Market",
+      href: "/blog/article?id=investment-banking"
     },
     {
       id: 5,
@@ -48,7 +52,8 @@ export function BlogPage() {
       author: "Industry Experts",
       date: "Oct 01, 2025",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-      category: "Business Analytics"
+      category: "Business Analytics",
+      href: "/blog/article?id=ai-finance"
     },
     {
       id: 6,
@@ -57,7 +62,8 @@ export function BlogPage() {
       author: "Placement Cell",
       date: "Sep 28, 2025",
       image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800",
-      category: "Career Guidance"
+      category: "Career Guidance",
+      href: "/blog/article?id=fintech"
     }
   ];
 
@@ -92,22 +98,24 @@ export function BlogPage() {
                 transition={{ delay: index * 0.1, duration: 0.5 }}
                 className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col"
               >
-                <div className="relative h-56 overflow-hidden flex-shrink-0 cursor-pointer">
+                <a href={blog.href} target="_blank" rel="noopener noreferrer" className="relative h-56 overflow-hidden flex-shrink-0 cursor-pointer block">
                   <img src={blog.image} alt={blog.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute top-4 left-4 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
                     {blog.category}
                   </div>
-                </div>
+                </a>
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center gap-4 text-xs text-muted-foreground mb-4">
                     <span className="flex items-center gap-1"><Calendar size={14} /> {blog.date}</span>
                     <span className="flex items-center gap-1"><User size={14} /> {blog.author}</span>
                   </div>
-                  <h2 className="text-xl font-bold text-primary mb-3 line-clamp-2 cursor-pointer hover:text-secondary transition-colors">{blog.title}</h2>
+                  <a href={blog.href} target="_blank" rel="noopener noreferrer">
+                    <h2 className="text-xl font-bold text-primary mb-3 line-clamp-2 cursor-pointer hover:text-secondary transition-colors">{blog.title}</h2>
+                  </a>
                   <p className="text-muted-foreground mb-6 line-clamp-3 flex-grow">{blog.excerpt}</p>
-                  <button className="text-secondary font-semibold flex items-center gap-2 hover:gap-3 transition-all mt-auto w-fit">
+                  <a href={blog.href} target="_blank" rel="noopener noreferrer" className="text-secondary font-semibold flex items-center gap-2 hover:gap-3 transition-all mt-auto w-fit">
                     Read Article <ArrowRight size={16} />
-                  </button>
+                  </a>
                 </div>
               </motion.article>
             ))}
