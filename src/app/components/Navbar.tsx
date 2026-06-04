@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { MobileNav } from './MobileNav';
 import { BookOpen } from 'lucide-react';
 import { Logo } from './Logo';
+import { Link } from 'react-router-dom';
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -22,21 +23,19 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-3 hover:opacity-90 transition-opacity">
             <Logo className="h-10 sm:h-12 w-auto bg-white p-1 rounded-md" />
             <div>
               <h1 className="text-white font-bold text-lg sm:text-xl">Vitta Nipun</h1>
               <p className="text-secondary text-xs hidden sm:block">Expert in Finance Education</p>
             </div>
-          </div>
+          </Link>
 
           <div className="hidden lg:flex items-center gap-8">
-            <a href="#home" className="text-white hover:text-secondary transition-colors">Home</a>
-            <a href="#courses" className="text-white hover:text-secondary transition-colors">Courses</a>
-            {/* <a href="#placements" className="text-white hover:text-secondary transition-colors">Placements</a>
-            <a href="#webinars" className="text-white hover:text-secondary transition-colors">Webinars</a> */}
+            <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-white hover:text-secondary transition-colors">Home</Link>
+            <a href="/#courses" className="text-white hover:text-secondary transition-colors">Courses</a>
             <a href="/blog" target="_blank" rel="noopener noreferrer" className="text-white hover:text-secondary transition-colors">Blogs</a>
-            <a href="#contact" className="text-white hover:text-secondary transition-colors">Contact</a>
+            <a href="/#contact" className="text-white hover:text-secondary transition-colors">Contact</a>
           </div>
 
           <div className="flex items-center gap-4">

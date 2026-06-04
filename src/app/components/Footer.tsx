@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
 import { Logo } from './Logo';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,13 +10,13 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="flex items-center gap-3 mb-4">
+            <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-3 mb-4 hover:opacity-90 transition-opacity w-fit">
               <Logo className="h-10 sm:h-12 w-auto bg-white p-1 rounded-md" />
               <div>
                 <h3 className="font-bold text-xl">Vitta Nipun</h3>
                 <p className="text-secondary text-xs">Expert in Finance Education</p>
               </div>
-            </div>
+            </Link>
             <p className="text-white/70 mb-6 leading-relaxed">
               India's leading finance education institute offering world-class programs in finance, technology, and data science.
             </p>
@@ -41,12 +42,12 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-white/70 hover:text-secondary transition-colors">About Us</a></li>
-              <li><a href="#" className="text-white/70 hover:text-secondary transition-colors">All Courses</a></li>
-              <li><a href="#" className="text-white/70 hover:text-secondary transition-colors">Placements</a></li>
-              <li><a href="#" className="text-white/70 hover:text-secondary transition-colors">Webinars</a></li>
+              <li><a href="/#about" className="text-white/70 hover:text-secondary transition-colors">About Us</a></li>
+              <li><a href="/#courses" className="text-white/70 hover:text-secondary transition-colors">All Courses</a></li>
+              <li><a href="/#placements" className="text-white/70 hover:text-secondary transition-colors">Placements</a></li>
+              <li><a href="/#webinars" className="text-white/70 hover:text-secondary transition-colors">Webinars</a></li>
               <li><a href="/blog" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-secondary transition-colors">Blog</a></li>
-              <li><a href="#" className="text-white/70 hover:text-secondary transition-colors">Success Stories</a></li>
+              <li><a href="/#testimonials" className="text-white/70 hover:text-secondary transition-colors">Success Stories</a></li>
             </ul>
           </div>
 

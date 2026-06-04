@@ -6,13 +6,13 @@ export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { icon: Home, label: 'Home', href: '#home' },
-    { icon: BookOpen, label: 'Courses', href: '#courses' },
-    { icon: Briefcase, label: 'Placements', href: '#placements' },
-    { icon: Video, label: 'Webinars', href: '#webinars' },
-    { icon: FileText, label: 'Blogs', href: '/blog' },
-    { icon: LayoutDashboard, label: 'Dashboard', href: '#dashboard' },
-    { icon: Mail, label: 'Contact', href: '#contact' },
+    { icon: Home, label: 'Home', href: '/' },
+    { icon: BookOpen, label: 'Courses', href: '/#courses' },
+    { icon: Briefcase, label: 'Placements', href: '/#placements' },
+    { icon: Video, label: 'Webinars', href: '/#webinars' },
+    { icon: FileText, label: 'Blogs', href: '/blog', target: '_blank' },
+    { icon: LayoutDashboard, label: 'Dashboard', href: '/#dashboard' },
+    { icon: Mail, label: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -59,9 +59,14 @@ export function MobileNav() {
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.05 }}
-                    onClick={() => setIsOpen(false)}
-                    target={item.href.startsWith('/') ? '_blank' : undefined}
-                    rel={item.href.startsWith('/') ? 'noopener noreferrer' : undefined}
+                    onClick={() => {
+                      setIsOpen(false);
+                      if (item.href === '/') {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                      }
+                    }}
+                    target={item.target}
+                    rel={item.target === '_blank' ? 'noopener noreferrer' : undefined}
                     className="flex items-center gap-4 p-4 text-white hover:bg-white/10 rounded-lg transition-all group"
                   >
                     <item.icon className="text-secondary group-hover:scale-110 transition-transform" size={20} />
