@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { MobileNav } from './MobileNav';
-import { BookOpen, GraduationCap } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
+import { Logo } from './Logo';
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -22,9 +23,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="bg-white p-2 rounded-full">
-              <GraduationCap className="text-primary" size={28} />
-            </div>
+            <Logo className="h-10 sm:h-12 w-auto bg-white p-1 rounded-md" />
             <div>
               <h1 className="text-white font-bold text-lg sm:text-xl">Vitta Nipun</h1>
               <p className="text-secondary text-xs hidden sm:block">Expert in Finance Education</p>
@@ -34,9 +33,9 @@ export function Navbar() {
           <div className="hidden lg:flex items-center gap-8">
             <a href="#home" className="text-white hover:text-secondary transition-colors">Home</a>
             <a href="#courses" className="text-white hover:text-secondary transition-colors">Courses</a>
-            <a href="#placements" className="text-white hover:text-secondary transition-colors">Placements</a>
+            {/* <a href="#placements" className="text-white hover:text-secondary transition-colors">Placements</a>
             <a href="#webinars" className="text-white hover:text-secondary transition-colors">Webinars</a>
-            <a href="#blogs" className="text-white hover:text-secondary transition-colors">Blogs</a>
+            <a href="#blogs" className="text-white hover:text-secondary transition-colors">Blogs</a> */}
             <a href="#contact" className="text-white hover:text-secondary transition-colors">Contact</a>
           </div>
 

@@ -1,4 +1,5 @@
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Youtube, GraduationCap } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
+import { Logo } from './Logo';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,9 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="bg-white p-2 rounded-full">
-                <GraduationCap className="text-primary" size={28} />
-              </div>
+              <Logo className="h-10 sm:h-12 w-auto bg-white p-1 rounded-md" />
               <div>
                 <h3 className="font-bold text-xl">Vitta Nipun</h3>
                 <p className="text-secondary text-xs">Expert in Finance Education</p>
