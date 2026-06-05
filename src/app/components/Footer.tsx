@@ -69,7 +69,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-secondary flex-shrink-0 mt-1" />
                 <span className="text-white/70">
-                <span className="text-white/70">Flat No. 103, 1st Floor Indradeep, Complex, 117/N/47, AVON Market, Ambedkar Nagar, Navin Nagar, Karadeo Kanpur, Uttar Pradesh, 208005, India</span>
+                <span className="text-white/70">Flat No. 103, 1st Floor Indradeep, Complex, 117/N/47, AVON Market, Ambedkar Nagar, Navin Nagar, Kakadeo Kanpur, Uttar Pradesh, 208005, India</span>
                   
                 </span>
               </li>
