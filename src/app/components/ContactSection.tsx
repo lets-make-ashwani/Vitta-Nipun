@@ -43,7 +43,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-white font-semibold mb-1">Visit Us</p>
-                    <p className="text-white/70">Flat No. 103, 1st Floor Indradeep, Complex, 117/N/47, AVON Market, Ambedkar Nagar, Navin Nagar, Karadeo Kanpur, Uttar Pradesh, 208005, India</p>
+                    <p className="text-white/70">Flat No. 103, 1st Floor Indradeep, Complex, 117/N/47, AVON Market, Ambedkar Nagar, Navin Nagar, Kakadeo Kanpur, Uttar Pradesh, 208005, India</p>
                   </div>
                 </div>
 
