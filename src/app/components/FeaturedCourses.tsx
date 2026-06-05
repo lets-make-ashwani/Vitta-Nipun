@@ -108,10 +108,10 @@ export function FeaturedCourses() {
                   </span>
                 </div>
 
-                <button className="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all group-hover:bg-secondary">
+                <a href="/#contact" className="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all group-hover:bg-secondary text-center">
                   Enroll Now
                   <ArrowRight size={18} />
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}

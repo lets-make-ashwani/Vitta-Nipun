@@ -39,9 +39,9 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-4">
-            <button className="hidden sm:block bg-secondary hover:bg-secondary/90 text-white px-6 py-2 rounded-lg font-semibold transition-colors">
+            <a href="/#contact" className="hidden sm:block bg-secondary hover:bg-secondary/90 text-white px-6 py-2 rounded-lg font-semibold transition-colors">
               Enroll Now
-            </button>
+            </a>
             <MobileNav />
           </div>
         </div>
